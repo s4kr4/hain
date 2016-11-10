@@ -36,7 +36,7 @@ Current API Version: `hain-0.5.0`
   * [hain-plugin-best-torrent](https://github.com/kamahl19/hain-plugin-best-torrent)
   * [hain-plugin-npm](https://github.com/kamahl19/hain-plugin-npm)
   * [hain-plugin-http-codes](https://github.com/quinnjn/hain-plugin-http-codes)
-- `hain-0.3.0`
-  * [hain-plugin-material-colors](https://github.com/aouerfelli/hain-plugin-material-colors)
 - `hain-0.4.0`
   * [hain-plugin-wolfram-alpha](https://github.com/ycanastra/hain-plugin-wolfram-alpha)
+- `hain-0.5.0`
+  * [hain-plugin-material-colors](https://github.com/aouerfelli/hain-plugin-material-colors)
