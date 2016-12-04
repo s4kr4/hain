@@ -6,6 +6,7 @@ Hain plugin is just a nodejs module.
 All plugin configurations must be located in package.json  
 
 * `name` String - Plugin name, must be prefixed with `hain-plugin-` (**required**)
+* `author` String or Object - Name of Plugin Author (**required**)
 * `version` String - Plugin version 'x.y.z' (**required**)
 * `hain` Object - (**required**)
   - `prefix` String - Plugin command prefix, e.g. '/g' (optional)
@@ -25,6 +26,7 @@ All plugin configurations must be located in package.json
 ```json
 {
   "name": "hain-plugin-google",
+  "author": "Heejin Lee",
   "version": "0.0.1",
   "keywords": [
     "hain-0.5.0"
