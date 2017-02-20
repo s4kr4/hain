@@ -43,12 +43,13 @@ module.exports = (pluginContext) => {
 This function will be invoked on startup once.
 you can do any preparations here.
 
-* **search(query, res)** (required)  
+* **search(query, res)** (optional)  
   - `query` String - user input
   - `res` ResponseObject - response object, See [ResponseObject]({{ site.baseurl }}/docs/response-object/)  
 
-  This function will be invoked when user changed input text.
-> **Note:** search function is ensured to be invoked once per `30ms`
+  This function will be invoked when user changed input text.  
+  
+  > **Note:** search function is ensured to be invoked once per `30ms`
 
 * **execute(id, payload)** (optional)  
   - `id` Any - id of the selected [SearchResult]({{ site.baseurl }}/docs/search-result/)

@@ -10,7 +10,7 @@ All plugin configurations must be located in package.json
 * `version` String - Plugin version 'x.y.z' (**required**)
 * `dependencies` Array - If your plugin has external dependencies, include them here. (required if applicable)
 * `hain` Object - (**required**)
-  - `prefix` String - Plugin command prefix, e.g. '/g' (optional)
+  - `prefix` String - Plugin command prefix which starts with one of `?@=\/#`, e.g. '/g' (**required**)
   - `usage` String - Plugin usage to be displayed in the empty ResultList. e.g. 'type /g' (optional, default is `prefix` value)
   - `icon` String - Icon URL, see [Icon URL Format]({{ site.baseurl }}/docs/icon-url-format/) (**required**)
   - `redirect` String - Query to redirect user input when user did select intro help (optional)
@@ -18,7 +18,7 @@ All plugin configurations must be located in package.json
 
 **And...**
 
-* `keywords` Array\<String\> - Add Base API version `hain-0.5.0` for sharing your plugin (**required**)
+* `keywords` Array\<String\> - Add Base API version `hain-0.6.0` for sharing your plugin (**required**)
 
 **Example**  
 
@@ -30,7 +30,7 @@ All plugin configurations must be located in package.json
   "author": "Heejin Lee",
   "version": "0.0.1",
   "keywords": [
-    "hain-0.5.0"
+    "hain-0.6.0"
   ],
   "hain": {
     "prefix": "/g",

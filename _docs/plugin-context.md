@@ -21,6 +21,7 @@ permalink: /docs/plugin-context/
 - `shell` [PluginContext.Shell]({{ site.baseurl }}/docs/plugin-context-shell/) - Provides electron's shell API  
 - `logger` [PluginContext.Logger]({{ site.baseurl }}/docs/plugin-context-logger/) - Provides logging API  
 - `localStorage` [node-persist Object](https://github.com/simonlast/node-persist) - Provides a storage for each plugins  
+- `indexer` [PluginContext.Indexer]({{ site.baseurl }}/docs/plugin-context-indexer/) - Provides Indexer API
 
 ### Preference Objects  
 - `globalPreferences` [PreferencesObject]({{ site.baseurl }}/docs/preferences-object/) - Contains Global preferences  
