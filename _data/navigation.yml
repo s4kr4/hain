@@ -44,6 +44,8 @@ docs:
         url: /docs/plugin-context-shell/
       - title: "PluginContext.Logger"
         url: /docs/plugin-context-logger/
+      - title: "PluginContext.Indexer"
+        url: /docs/plugin-context-indexer/
       # ...
       - title: SearchResult
         url: /docs/search-result/
@@ -51,3 +53,5 @@ docs:
         url: /docs/response-object/
       - title: PreferencesObject
         url: /docs/preferences-object/
+      - title: IndexerElement
+        url: /docs/indexer-element/

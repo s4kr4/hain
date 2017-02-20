@@ -3,7 +3,7 @@ title: "Plugin Documentation"
 permalink: /docs/
 ---
 
-Current API Version: `hain-0.5.0`
+Current API Version: `hain-0.6.0`
 
 ## Plugins on Github
 - `hain0`
