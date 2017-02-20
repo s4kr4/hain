@@ -2,7 +2,7 @@
 title: "SearchResult"
 permalink: /docs/search-result/
 ---
-SearchResult is a plain object format which has a following properties:
+SearchResult is a plain object which has a following properties:
 
 * `id` Any - An identifier (recommend to be unique), used as argument of `execute` function (optional, default is `undefined`)
 * `payload` Any - Extra information, used as a argument of `execute` function (optional, default is `undefined`) 
