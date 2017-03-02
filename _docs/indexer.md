@@ -5,11 +5,19 @@ permalink: /docs/plugin-context-indexer/
 ## Methods
 
 ### indexer.set(key, arrayOrFunc)
-  - `key` String - Arbitrary Key, You can unregister registered elements with this key
-  - `arrayOrFunc` Array&lt;[IndexerElement]({{ site.baseurl }}/docs/indexer-element/)&gt; or Function - 
+  - `key` String - Arbitrary Key, you can unregister registered elements with this key
+  - `arrayOrFunc` Array&lt;[IndexerElement]({{ site.baseurl }}/docs/indexer-element/)&gt; or Function - IndexerElements
   
+  Register IndexerElements with the key
+
 ### indexer.unset(key)
-  - `key` String - Arbitrary Key, You can unregister registered elements with this key
+  - `key` String - The key used for registering
+
+  Unregister IndexerElements with the registered key
+
+> **Note**  
+> Currently, there are so many undocumented things for Indexer  
+> Please refer to see [hain-plugin-filesearch](https://github.com/appetizermonster/hain/tree/master/app/main/plugins/hain-plugin-filesearch) source code to how to use it  
 
 ## Example
 

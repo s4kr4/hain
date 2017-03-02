@@ -12,6 +12,11 @@ IndexerElement is a plain object which has a following properties:
 * `redirect` String - Redirection query (optional, default is `undefined`)
 * `group` String - Result group name (optional, default is `undefined`)
 
+IndexerElement is used for synchronous searching items.  
+Both `primaryText` and `secondaryText` are used for user query matching.  
+`primaryText` has high-priority. `secondaryText` has lower-priority.  
+
+
 ## Example
 
 ```javascript
