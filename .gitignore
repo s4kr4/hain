@@ -8,12 +8,13 @@ node_modules
 /plugins/
 /devplugins/
 
-/hain-debug.log
 /_launched_
 
 /out
 *.nupkg
 
 /.idea
-hain-debug*.log
+/hain-debug*.log
 npm-debug.log.*
+
+/local
