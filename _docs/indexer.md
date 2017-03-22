@@ -17,7 +17,7 @@ permalink: /docs/plugin-context-indexer/
 
 > **Note**  
 > Currently, there are so many undocumented things for Indexer  
-> Please refer to see [hain-plugin-filesearch](https://github.com/appetizermonster/hain/tree/master/app/main/plugins/hain-plugin-filesearch) source code to how to use it  
+> Please refer to see [hain-plugin-filesearch](https://github.com/hainproject/hain/tree/master/app/main/plugins/hain-plugin-filesearch) source code to how to use it  
 
 ## Example
 

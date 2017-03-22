@@ -4,7 +4,7 @@ main:
     url: /docs/
 
   - title: "View on Github"
-    url: https://github.com/appetizermonster/hain
+    url: https://github.com/hainproject/hain
 
 docs:
   - title: Plugin Documentation

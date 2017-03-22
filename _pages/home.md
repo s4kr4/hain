@@ -16,5 +16,5 @@ An `alt+space` launcher for Windows, built with Electron
 I always dreamed of an alternative to Alfred on Windows, that is made with JavaScript.
 <br />
 <br />
-<a href="https://github.com/appetizermonster/hain/releases">Downloads</a>
+<a href="https://github.com/hainproject/hain/releases">Downloads</a>
 </center>
