@@ -50,7 +50,7 @@ module.exports = class ShortcutService {
 
   _registerShortcut(shortcut, query) {
     globalShortcut.register(shortcut, () => {
-      this.appService.mainWindow.show(query);
-    });
+		this.appService.mainWindow.toggle(query);
+	});
   }
 };

@@ -90,7 +90,8 @@ module.exports = class MainWindow {
       windowUtil.centerWindowOnSelectedScreen(this.browserWindow, this.appPref.get('openOnActiveDisplay'));
 
     this.browserWindow.show();
-    this.setQuery(query);
+    if(query)
+      this.setQuery(query);
   }
 
   hide(dontRestoreFocus) {
@@ -107,10 +108,13 @@ module.exports = class MainWindow {
     if (this.browserWindow === null)
       return;
 
-    if (this.browserWindow.isVisible())
+    if (query || !this.browserWindow.isVisible()) {
+      this.show();
+      if(query)
+        this.setQuery(query);
+    } else {
       this.hide();
-    else
-      this.show(query);
+    }
   }
 
   setQuery(query) {
