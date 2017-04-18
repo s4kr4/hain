@@ -1,39 +1,46 @@
 {
-  "extends": "airbnb-base",
-  "rules": {
-    "comma-dangle": ["warn", "only-multiline"],
-    "no-unused-vars": "warn",
-    "camelcase": "off",
-    "object-shorthand": "off",
-    "guard-for-in": "warn",
-    "arrow-body-style": "off",
-    "consistent-return": "warn",
-    "no-throw-literal": "warn",
-    "quote-props": "off",
-    "new-cap": "warn",
-    "default-case": "off",
-    "no-empty": "warn",
-    "curly": "off",
-    "padded-blocks": "off",
-    "no-use-before-define": "warn",
-    "no-param-reassign": ["error", { "props": false }],
-    "max-len": "off",
-    "no-underscore-dangle": "off",
-    "strict": "off",
-    "global-require": "off",
-    "no-restricted-syntax": "off",
-    "no-multi-spaces": "off",
-    "spaced-comment": "off"
-   },
-   "env": {
-     "jest": true
-   },
-   "plugins": [
-     "react"
-   ],
-   "parserOptions": {
-     "ecmaFeatures": {
-       "jsx": true
-     }
-   }
+  "extends":       "recommended/node",
+  "rules":         {
+    "comma-dangle":             ["warn", "only-multiline"],
+    "no-unused-vars":           "warn",
+    "camelcase":                "off",
+    "object-shorthand":         "off",
+    "guard-for-in":             "warn",
+    "arrow-body-style":         "off",
+    "consistent-return":        "warn",
+    "no-throw-literal":         "warn",
+    "quote-props":              "off",
+    "new-cap":                  "off",
+    "default-case":             "off",
+    "no-empty":                 "warn",
+    "curly":                    "off",
+    "padded-blocks":            "off",
+    "no-use-before-define":     "warn",
+    "no-param-reassign":        ["error", {"props": false}],
+    "max-len":                  "off",
+    "no-underscore-dangle":     "off",
+    "strict":                   "off",
+    "global-require":           "off",
+    "no-restricted-syntax":     "off",
+    "no-multi-spaces":          "off",
+    "spaced-comment":           "off",
+    "no-trailing-spaces":       "off",
+    "key-spacing":              "off",
+    "func-names":               "off",
+    "no-empty-function":        "off",
+    "no-console":               "warn",
+    "import/no-commonjs":       "warn",
+    "import/no-nodejs-modules": "off"
+  },
+  "env":           {
+    "jest": true
+  },
+  "plugins":       [
+    "react"
+  ],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  }
 }
