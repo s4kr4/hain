@@ -110,8 +110,7 @@ module.exports = class MainWindow {
 
     if (query || !this.browserWindow.isVisible()) {
       this.show();
-      if(query)
-        this.setQuery(query);
+      this.setQuery(query || '');
     } else {
       this.hide();
     }
