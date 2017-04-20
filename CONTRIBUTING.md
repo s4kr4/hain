@@ -1,6 +1,15 @@
 # Contributing
 Want to contribute to hain? Well, you've come to the right place!
 
+First, join our mailing list and introduce yourself.  You can join the mailing list by sending an 
+email with Subscribe in the subject line to hain-request@freelists.org
+
+# Ideas / Enhancements
+If you have an idea for an enhancement, please join the mailing list to see how you can contribute that idea
+to hain, we can provide help with understanding the project and even help with learning a bit about programming.
+
+Everyone is welcome to contribute in any way they would like.
+
 # Issues
 When opening an issue, please go by the following:
 
