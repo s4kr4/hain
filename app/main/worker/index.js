@@ -41,7 +41,7 @@ rpc.define('initialize', (payload) => {
 });
 
 rpc.define('searchAll', (payload) => {
-  const { query, ticket } = payload;
+  const { ticket, query } = payload;
   const resFunc = (obj) => {
     const resultData = {
       ticket,

@@ -99,6 +99,7 @@ class AppContainer extends React.Component {
     });
     rpc.define('requestAddResults', (__payload) => {
       const { ticket, type, payload } = __payload;
+      console.log('app.jsx -> rpc(requestAddResults), ticket=%s, type=%s, payload=%o', ticket, type, payload);
       if (searchTicket.current !== ticket)
         return;
 
@@ -261,6 +262,15 @@ class AppContainer extends React.Component {
   }
 
   handleEnter(evt) {
+    if(this.lastResultTicket !== searchTicket.current) {
+      // For some reason, evt being passed along is invalid, creating a copy of it passes along just fine, unusual but necessary
+      const e = Object.setPrototypeOf(Object.assign({}, evt),
+        Object.getPrototypeOf(evt));
+      setTimeout(() => {
+        this.handleEnter(e);
+      }, 100);
+      return;
+    }
     const results = this.state.results;
     const selectionIndex = this.state.selectionIndex;
     this.execute(results[selectionIndex], evt);
