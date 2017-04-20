@@ -41,7 +41,7 @@ module.exports = (context) => {
     try {
       const ans = math.eval(query);
       if (lo_isNumber(ans) || lo_isString(ans) || (lo_isObject(ans) && lo_has(ans, 'value'))) {
-        const ansString = ans.toString();
+        const ansString = Number.parseFloat(ans.toPrecision(10)).toString();
         const isResultMeaningful = (ansString.trim() !== query.trim());
         if (isResultMeaningful || showRedundantResult)
           return ansString;
