@@ -1,0 +1,21 @@
+os: osx
+language: node_js
+node_js: 6
+install:
+  - npm install
+  - npm install -g gulp
+  - gulp
+after_success:
+  - gulp build-darwin
+deploy:
+  provider: releases
+  api_key:
+    secure: VCHi/EbYejS4SoZTQJ8jpquypVN/hwFUuqrNPAx/QAKMkZIGUdQV2HwPge2M6lDKRZinnb71GWtB3k/k4zSDGb2g2oMwfvlpXZeiGoDJFMA9wZEpd7Tib4eESk8MgZDioWGhD8KDFviZRL5gNCL2LOC/Kf4k8NdqEDPEBlTQ6LRJILStNZfAxkhEXUsS3co6HFxa206CMGaa6Z/C8abssDJ1FwCK0MBNsdZPyXh8j0L7RiMZC/ndDopU//RrzreCjol6URbcVXccGLKpvwER2Qk+jsX0O/a4993ZJtar5GbmYSXOylDhIKhwqWacCqHZI9hJZKsns/gsDnr0sHn2ko2ODvk1jyJgWCO5gAoPbB0U+cDNVAG9YrqTYnAHaTQwZNaeaanvTfiAnrpBbtP6UmOgO47tQDHKu1iVmo+5NdOHqLTJEyPE7i4nAklW48KkJKyO+SHf0q23kKz0aJ61/VqAkObkE6Ms1WcIeTE3ggMYVQfkY9vgKIScjNIyYZttJmTTNtVq8vf1GdI1n23ZFaXdY9BH8/PlmrUWhmLY1Rv8Z8szokcRhNQ9H2pDpu7FwKfD1Lp2RZDFVs3UrzFXwgZdvljQCF3XXLHlVsxY/aSunGcMyAoifCadS8U7VaK/sO27bVq6WwC42Iig56frF+qsq2Higx78wOXx3wcgTXc=
+  file_glob: true
+  file: out/*.zip
+  overwrite: true
+  skip_cleanup: true
+  draft: true
+  on:
+    repo: hainproject/hain
+    tags: true
