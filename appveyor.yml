@@ -2,6 +2,7 @@ branches:
   only:
     - master
     - develop
+    - /.*appveyor.*/
 
 environment:
   nodejs_version: "6.5.0"
@@ -24,3 +25,14 @@ build_script:
 artifacts:
   - path: 'out\*.zip'
   - path: 'out\*.exe'
+
+deploy:
+  provider: GitHub
+  tag: $(APPVEYOR_REPO_TAG_NAME)
+  release: $(APPVEYOR_REPO_TAG_NAME)
+  auth_token:
+    secure: fhsM1r5amyUNk2gWNrNSdDEO7idtXAVj7/FubxAogNBADDR8I1zt7tlrXlok2bi+
+  draft: true
+  force_update: true
+  on:
+    appveyor_repo_tag: true
