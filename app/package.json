@@ -1,6 +1,16 @@
 {
   "name": "hain",
   "version": "0.6.2",
+  "_apiVersion": {
+    "currentVersion": "0.6.0",
+    "compatibleVersions": [
+      "hain0",
+      "hain-0.1.0",
+      "hain-0.3.0",
+      "hain-0.4.0",
+      "hain-0.5.0"
+    ]
+  },
   "description": "An `alt+space` launcher for Windows, built with Electron",
   "main": "main/bootstrap.js",
   "author": "Heejin Lee <monster@teamappetizer.com>",
