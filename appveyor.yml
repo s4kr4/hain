@@ -3,6 +3,7 @@ branches:
     - master
     - develop
     - /.*appveyor.*/
+    - /v.+/
 
 environment:
   nodejs_version: "6.5.0"
