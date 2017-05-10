@@ -1,16 +1,16 @@
 # Release Process
 
-This document describes the process of releasing Hain.
+This document describes the process of releasing Hain.  
 Maintainers can refer to this document to release a new version of Hain.
 
 ## Versioning
-Hain is aiming for `Semantic Versioning` in versioning.
+Hain is aiming for `Semantic Versioning` in versioning.  
 You can use the version name in `vX.Y.Z` format.
 
 ## API version
-Hain is exposing the API for the plugin, and it also has the API version for each build.
-Depending on the addition or change of the API, the API version may be changed.
-and also the list of compatible API versions may be changed.
+Hain is exposing the API for the plugin, and it also has the API version for each build.  
+Depending on the addition or change of the API, the API version may be changed.  
+and also the list of compatible API versions may be changed.  
 You can see the compatible API versions in the `_apiVersions` field in `app/package.json` file.
 
 ## How to release
