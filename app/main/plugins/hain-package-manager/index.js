@@ -234,7 +234,7 @@ module.exports = (context) => {
   function uninstallPackage(packageName) {
     try {
       pm.uninstallPackage(packageName);
-      toast.enqueue(`${packageName} has uninstalled, Reload plugins to take effect`, 3000);
+      toast.enqueue(`${packageName} has been uninstalled, Reload plugins to take effect`, 3000);
     } catch (e) {
       toast.enqueue(e.toString());
     }
@@ -246,8 +246,8 @@ module.exports = (context) => {
       currentStatus = `Installing <b>${packageName}</b>`;
       try {
         yield pm.installPackage(packageName, 'latest');
-        toast.enqueue(`${packageName} has installed, Reload plugins to take effect`, 3000);
-        logger.log(`${packageName} has pre-installed`);
+        toast.enqueue(`${packageName} has been installed, Reload plugins to take effect`, 3000);
+        logger.log(`${packageName} has been pre-installed`);
       } catch (e) {
         toast.enqueue(e.toString());
         logger.log(`${packageName} ${e}`);
@@ -265,8 +265,8 @@ module.exports = (context) => {
       try {
         pm.uninstallPackageForUpdate(packageName);
         yield pm.installPackage(packageName, 'latest');
-        toast.enqueue(`${packageName} has updated, Reload plugins to take effect`, 3000);
-        logger.log(`${packageName} has pre-installed (for update)`);
+        toast.enqueue(`${packageName} has been updated, Reload plugins to take effect`, 3000);
+        logger.log(`${packageName} has been pre-installed (for update)`);
       } catch (e) {
         toast.enqueue(e.toString());
         logger.log(`${packageName} ${e}`);
