@@ -22,6 +22,7 @@
   "dependencies": {
     "application-config-path": "^0.1.0",
     "co": "^4.6.0",
+    "easyinput": "0.0.1",
     "electron-squirrel-startup": "^1.0.0",
     "fs-extra": "^0.26.5",
     "fs-promise": "1.0.0",
@@ -67,8 +68,8 @@
     "sanitize-html": "^1.11.3",
     "semver": "^5.1.0",
     "simple-lru-cache": "0.0.2",
-    "tarball-extract": "0.0.3",
     "tar": "2.2.1",
+    "tarball-extract": "0.0.3",
     "tunnel": "0.0.4",
     "twitter-text": "^1.13.4",
     "uuid": "2.0.2",

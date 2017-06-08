@@ -14,6 +14,7 @@ componentSelector.inject((schema) => schema.enum !== undefined, require('./compo
 componentSelector.inject('object', require('./components/object'));
 componentSelector.inject('array', require('./components/array'));
 componentSelector.inject('string', require('./components/string'));
+componentSelector.inject('shortcutString', require('./components/shortcut-string'));
 componentSelector.inject('integer', require('./components/number'));
 componentSelector.inject('number', require('./components/number'));
 componentSelector.inject('boolean', require('./components/boolean'));

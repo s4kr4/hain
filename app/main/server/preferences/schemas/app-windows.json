@@ -27,7 +27,7 @@
         "type": "object",
         "properties": {
           "shortcut": {
-            "type": "string",
+            "type": "shortcutString",
             "title": "Shortcut",
             "minLength": 1,
             "errorMessages": "You must provide the shortcut (e.g. 'alt+/')"
